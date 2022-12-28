@@ -11,19 +11,19 @@ __💠Game Preview :__ <br>
 
 <div style="display:flex;">
     <div>
-        <img src="https://i.postimg.cc/rwL7wb0w/d1.png" alt="drawing" width="400"  loading="lazy"/>
-        <img src="https://i.postimg.cc/9QVNh7K4/d2.png" alt="drawing" width="400"  loading="lazy"/>
+        <img src="https://i.postimg.cc/rwL7wb0w/d1.png" alt="Opening" width="400"  loading="lazy"/>
+        <img src="https://i.postimg.cc/9QVNh7K4/d2.png" alt="Credit" width="400"  loading="lazy"/>
     </div>
     <div>
-        <img src="https://i.postimg.cc/y6Zf3jzg/d3.png" alt="drawing" width="400"  loading="lazy"/>
-        <img src="https://i.postimg.cc/FK6Z7dWV/d4.png" alt="drawing" width="400"  loading="lazy"/>
+        <img src="https://i.postimg.cc/y6Zf3jzg/d3.png" alt="Moving Player" width="400"  loading="lazy"/>
+        <img src="https://i.postimg.cc/FK6Z7dWV/d4.png" alt="Choosing Next Move" width="400"  loading="lazy"/>
     </div>
     <div>
-         <img src="https://i.postimg.cc/hvBVd99T/d5.png" alt="drawing" width="400"  loading="lazy"/>
-         <img src="https://i.postimg.cc/28C4j7jf/d6.png" alt="drawing" width="400"  loading="lazy"/>
+         <img src="https://i.postimg.cc/hvBVd99T/d5.png" alt="Tutorial" width="400"  loading="lazy"/>
+         <img src="https://i.postimg.cc/28C4j7jf/d6.png" alt="Conversation" width="400"  loading="lazy"/>
      </div>
      <div>
-         <img src="https://i.postimg.cc/C57nn9Mp/d7.png" alt="drawing" width="400"  loading="lazy"/>
-         <img src="https://i.postimg.cc/wxQmrRX4/d8.png" alt="drawing" width="400"  loading="lazy"/>
+         <img src="https://i.postimg.cc/C57nn9Mp/d7.png" alt="Fighting" width="400"  loading="lazy"/>
+         <img src="https://i.postimg.cc/wxQmrRX4/d8.png" alt="End Game" width="400"  loading="lazy"/>
      </div>
 <div>
