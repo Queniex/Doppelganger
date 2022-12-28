@@ -15,7 +15,7 @@ float y = 0;
 void setup(){
  smooth();
  size(1000,550);
- //music = new SoundFile(this, "Assets\\mmsong.mp3");
+ music = new SoundFile(this, "Assets\\mmsong.mp3");
  
  gameBackground = loadImage("Assets\\mmbg2.png");
  menuBackground = loadImage("Assets\\StartPg2.png");
@@ -45,8 +45,8 @@ void setup(){
  menuFont = createFont("No Continue", 31);
  regularFont = createFont("Georgia", 31);
  
- //music.play();
- //music.loop();
+ music.play();
+ music.loop();
  frameRate(60);
  
  y = height;
@@ -162,10 +162,6 @@ void play(){
 
 }
 
-//void gameGUI() {
-//  noFill(); 
-//}
-
 // ------------------- Tampilan lawan monster -------------------------------
 void mulai(){
   println("->Lawan Monster");
@@ -261,25 +257,3 @@ void mousePressed(){
     }  
   } 
 }
-
-// ------------------- Credit Text ------------------------------------------
-//void credit(){
-  
-//   if( y == -300){
-//    stroke(2);
-//    fill(127);
-//    rect(413,286, 100,20); 
-//   }
-  
-//   println(mouseX,mouseY);
-//   background(0);
-//   translate(width/2, height/2);
-//   fill(255);
-//   textSize(width*0.04);
-//   textAlign(CENTER);
-//   rotateX(PI/4);
-//   float w =  - width*0.6;
-//   text(txt, -w/2, y, w, height*10);
-//   y--;
-  
-//}

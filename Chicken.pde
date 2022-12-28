@@ -16,12 +16,6 @@ class Chicken {
    image(character,x-100,y);
    image(cloud,a,b);
    
-   //if((mouseX >= 43 && mouseY >= 21) && (mouseX<=157 && mouseY <= 71)){
-   //  fill(0);
-   //  rect(43,21,50,10);
-   //  panels = 0;
-   //}
-   
    if(keyB == true){
       if(x >= -80 && x <= 120){
        textFont(menuFont);
