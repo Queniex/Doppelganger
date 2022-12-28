@@ -4,10 +4,10 @@ Fight f = new Fight();
 import processing.sound.*;
 SoundFile music;
 String x, card1 = "-", card2 = "-";
-Boolean left,right,text, hide = false;
+Boolean left,right,text, hide = false, score = false;
 int panels = 0;
 PImage gameBackground, menuBackground, character, monster, mulaiBackground, character2, monster2, fire, wind, water, earth, cloud, keyboard;
-int i = 0 ;
+int i = 0 , w = 0, l = 0;
 PFont menuFont, regularFont;
 String txt;
 float y = 0;
@@ -15,7 +15,7 @@ float y = 0;
 void setup(){
  smooth();
  size(1000,550);
- music = new SoundFile(this, "Assets\\mmsong.mp3");
+ //music = new SoundFile(this, "Assets\\mmsong.mp3");
  
  gameBackground = loadImage("Assets\\mmbg2.png");
  menuBackground = loadImage("Assets\\StartPg2.png");
@@ -45,14 +45,16 @@ void setup(){
  menuFont = createFont("No Continue", 31);
  regularFont = createFont("Georgia", 31);
  
- music.play();
- music.loop();
+ //music.play();
+ //music.loop();
  frameRate(60);
  
  y = height;
 }
 
 void draw(){
+ println(w + " " + l + " " + score);
+ println(mouseX,mouseY);
  background(gameBackground);
  switch(panels){
   case 0 : menu(); break;
@@ -66,13 +68,25 @@ void draw(){
 
 // ------------------- Tampilan awal game -------------------------------
 void menu(){
- println(mouseX,mouseY);
  background(gameBackground);
  println("->menu");
  textFont(menuFont);
  fill(0);
  textSize(60);
  text("DOPPELGANGER?", 26, 73);
+ 
+ textSize(30);
+ text("Last Score ", 801, 53);
+ 
+ rect(801,57,140,4);
+ 
+ textSize(20);
+ text("Win : " + w , 801, 83);
+ 
+ textSize(20);
+ text("Lose : " + l, 801, 103);
+ 
+ fill(0);
  textFont(regularFont);
  textSize(20);
  text("Aren't you?", 26, 98);
@@ -172,6 +186,20 @@ void mulai(){
  }
 }
 
+void score(){
+  if(f.life1 == 0 && score == true ){
+   l = l + 1; 
+   score = false;
+  } else if (f.life2 == 0 && score == true){
+    w = w + 1;
+    score = false;
+  } else {
+   l = l + 0;
+   w = w + 0;
+  }
+  
+}
+
 // ------------------- Tampilan menang/kalah -------------------------------
 void selesai(){
       println("->Selesai");
@@ -182,6 +210,7 @@ void selesai(){
         x = "YOU'RE THE DOPPELGANGER, RIGHT!?!?";
         fill(230, 0, 0);
         text(x,283,256);
+        //l++;
         
         textFont(regularFont);
         textSize(20);
@@ -197,6 +226,8 @@ void selesai(){
           text(x,470,286);
           
           if(mousePressed) {
+           score = true;
+           score();
            hide = true;
            panels = 0;
            delay(10);
@@ -209,6 +240,7 @@ void selesai(){
         x = "YOU'RE THE REAL CHICKEN, CONGRATS!";
         fill(0, 77, 0);
         text(x,283,256);
+        //w++;
         
         textFont(regularFont);
         textSize(20);
@@ -224,6 +256,8 @@ void selesai(){
           text(x,470,286);
           
           if(mousePressed) {
+           score = true;
+           score();
            hide = true;
            panels = 0;
            delay(10);
