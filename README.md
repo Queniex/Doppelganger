@@ -3,7 +3,7 @@ KELAS : TI-3A <br>
 KELOMPOK : 5 <br>
 
 __💠Game Preview :__ <br>
-Membuat animasi game dengna processing menggunakan control mouse atau keyboard dengan scoring
+Membuat animasi game dengan processing menggunakan control mouse atau keyboard dengan scoring
 
 __💠Anggota :__ <br>
 1. Larasati Maharani (2107411011)
