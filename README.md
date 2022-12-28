@@ -2,7 +2,7 @@
 KELAS : TI-3A <br>
 KELOMPOK : 5 <br>
 
-__💠Game Preview :__ <br>
+__💠Game Kriteria :__ <br>
 Membuat animasi game dengan processing menggunakan control mouse atau keyboard dengan scoring
 
 __💠Anggota :__ <br>
