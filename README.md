@@ -15,7 +15,7 @@ __💠Game Preview :__ <br>
 
 <div style="display:flex;">
     <div>
-        <img src="https://i.postimg.cc/rwL7wb0w/d1.png" alt="Opening" width="400"  loading="lazy"/>
+        <img src="https://i.postimg.cc/fT2Gm0jS/d1.png" alt="Opening" width="400"  loading="lazy"/>
         <img src="https://i.postimg.cc/9QVNh7K4/d2.png" alt="Credit" width="400"  loading="lazy"/>
     </div>
     <div>
